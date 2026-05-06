@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Arif — Web Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <img src="logo.png" alt="Muhammad Arif Logo" style="height:75px; width:auto; object-fit:contain;"/>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="hero-tag">Open To Internship Opportunities</div>
+        <h1 class="hero-name">Muhammad<br/><span>Arif</span></h1>
+        <p class="hero-role">Frontend Web Developer &amp; CS Student</p>
+        <p class="hero-desc">
+          Passionate about building clean, responsive, and user-friendly web experiences.
+          Currently mastering React.js on the journey to becoming a Full Stack Developer.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary-custom">
+            <i class="bi bi-grid-fill"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-outline-custom">
+            <i class="bi bi-send-fill"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div>
+            <div class="stat-num">7th</div>
+            <div class="stat-label">Semester BS CS</div>
+          </div>
+          <div>
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="row g-4">
+      <div class="col-lg-5 fade-up">
+        <div class="about-card h-100">
+          <p style="color:var(--muted); line-height:1.9; font-size:0.95rem;">
+            I'm a <strong style="color:var(--text)">BS Computer Science student</strong> at Lahore Leads University,
+            currently in my 7th semester. I have a strong passion for frontend web development
+            and building intuitive digital experiences.
+          </p>
+          <br/>
+          <p style="color:var(--muted); line-height:1.9; font-size:0.95rem;">
+            I'm actively learning <strong style="color:var(--accent)">React.js</strong> and plan to expand
+            into backend development (Node.js) to become a complete Full Stack Developer.
+            I also have experience in design tools like Figma, Photoshop, and Illustrator.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-up">
+        <div class="about-card h-100">
+          <p class="section-label mb-3">Technical Skills</p>
+          <div class="mb-3">
+            <small style="color:var(--muted); font-family:'Space Mono',monospace; font-size:0.7rem;">FRONTEND</small><br/>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+          <div class="mb-3">
+            <small style="color:var(--muted); font-family:'Space Mono',monospace; font-size:0.7rem;">LEARNING</small><br/>
+            <span class="skill-tag purple">React.js</span>
+            <span class="skill-tag purple">Node.js</span>
+          </div>
+          <div class="mb-3">
+            <small style="color:var(--muted); font-family:'Space Mono',monospace; font-size:0.7rem;">DESIGN & CMS</small><br/>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">WordPress</span>
+          </div>
+          <div>
+            <small style="color:var(--muted); font-family:'Space Mono',monospace; font-size:0.7rem;">TOOLS</small><br/>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">02 — Work</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+
+      <!-- Weather App -->
+      <div class="col-md-6 fade-up">
+        <div class="project-card">
+          <div class="project-num">PROJECT_01</div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">
+            A fully functional weather application that fetches real-time data using OpenWeatherMap API.
+            Displays current temperature, humidity, wind speed, 5-day forecast, and sunrise/sunset times.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Weather API</span>
+            <span class="tech-pill">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/muhammadarif-dev/weatherapp" target="_blank" class="project-link-btn">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://muhammadarif-dev.github.io/weatherapp/" target="_blank" class="project-link-btn live">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- To-Do App -->
+      <div class="col-md-6 fade-up">
+        <div class="project-card">
+          <div class="project-num">PROJECT_02</div>
+          <h3 class="project-title">TaskFlow — To-Do App</h3>
+          <p class="project-desc">
+            A task management app with sidebar layout, priority levels, category filters, circular progress ring,
+            and localStorage persistence. Fully responsive with mobile hamburger menu.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">LocalStorage</span>
+            <span class="tech-pill">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/muhammadarif-dev/To-do-app" target="_blank" class="project-link-btn">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://muhammadarif-dev.github.io/To-do-app/" target="_blank" class="project-link-btn live">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="col-md-6 fade-up">
+        <div class="project-card" style="border-style:dashed; opacity:0.6;">
+          <div class="project-num">PROJECT_03</div>
+          <h3 class="project-title" style="color:var(--muted)">Coming Soon...</h3>
+          <p class="project-desc">
+            Currently working on React.js projects. Stay tuned for more work being added soon.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">03 — Background</div>
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"><i class="bi bi-mortarboard-fill"></i></div>
+      <div>
+        <div class="timeline-date">2023 — 2027</div>
+        <div class="timeline-title">BS Computer Science — Lahore Leads University</div>
+        <div class="timeline-sub">7th Semester · Lahore, Pakistan</div>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"><i class="bi bi-book-fill"></i></div>
+      <div>
+        <div class="timeline-date">2021 — 2023</div>
+        <div class="timeline-title">FSc Pre-Medical — International Islamia College</div>
+        <div class="timeline-sub">Grade: A · District Buner, Kpk, Pakistan</div>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"><i class="bi bi-award-fill"></i></div>
+      <div>
+        <div class="timeline-date">Completed 2021</div>
+        <div class="timeline-title">Matriculation (Science) — Qurtaba Public School</div>
+        <div class="timeline-sub">Grade: A+ · District Buner, Kpk, Pakistan</div>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot" style="border-color:var(--accent2); color:var(--accent2); background:rgba(167,139,250,0.15);">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <div>
+        <div class="timeline-date" style="color:var(--accent2)">Certificate</div>
+        <div class="timeline-title">Web Development Specialization</div>
+        <div class="timeline-sub">Completed foundational &amp; advanced web development coursework</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">04 — Contact</div>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-lg-4">
+        <div class="about-card h-100">
+          <h4 style="font-weight:700; margin-bottom:1.5rem;">Contact Info</h4>
+          <a href="mailto:muhammadarif.dev@gmail.com" class="contact-link d-block mb-2">
+            <i class="bi bi-envelope-fill"></i> muhammadarif.dev@gmail.com
+          </a>
+          <a href="tel:+923479095329" class="contact-link d-block mb-2">
+            <i class="bi bi-phone-fill"></i> +92 3479095329
+          </a>
+          <a href="https://linkedin.com/in/muhammadarif-dev" target="_blank" class="contact-link d-block mb-2">
+            <i class="bi bi-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com/muhammadarif-dev" target="_blank" class="contact-link d-block">
+            <i class="bi bi-github"></i> GitHub Profile
+          </a>
+          <hr style="border-color:var(--border); margin:1.5rem 0;"/>
+          <p style="color:var(--muted); font-size:0.85rem; line-height:1.7;">
+            I'm actively looking for web development internship opportunities. Feel free to reach out!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="contact-card fade-up" style="text-align:left;">
+          <h4 style="font-weight:700; margin-bottom:1.5rem;">Send Me a Message</h4>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label-custom">YOUR NAME</label>
+              <input type="text" name="name" required placeholder="e.g. Ali Ahmed" class="form-input-custom"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label-custom">YOUR EMAIL</label>
+              <input type="email" name="email" required placeholder="e.g. ali@gmail.com" class="form-input-custom"/>
+            </div>
+            <div class="mb-4">
+              <label class="form-label-custom">MESSAGE</label>
+              <textarea name="message" required rows="5" placeholder="Your message here..." class="form-input-custom"></textarea>
+            </div>
+            <button type="submit" class="btn-primary-custom" id="submitBtn" style="width:100%; justify-content:center;">
+              <i class="bi bi-send-fill"></i> <span id="btnText">Send Message</span>
+            </button>
+            <div id="formMsg" style="margin-top:1rem; font-size:0.85rem; text-align:center; display:none;"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed and Built by <span style="color:var(--accent)">Muhammad Arif</span> &nbsp;·&nbsp; 2025</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- Custom JS -->
+<script src="main.js"></script>
+
+</body>
+</html>
